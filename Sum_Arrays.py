@@ -7,3 +7,6 @@ def sum_array(a):
     for i in a:
         sum+=i
     return sum
+lis = []
+for i in range(int(input("How many items do you want?"))):
+    lis.append(int(input("Please enter item: ")))
