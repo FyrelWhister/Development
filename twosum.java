@@ -7,12 +7,12 @@ class Solution {
         
         for(int a = 0;a<nums.length;a+=1)
         {
-            for(int j=0;j<nums.length;j+=1)
+            for(int j=a+1;j<nums.length;j+=1)
             {
-                if (nums[a]+nums[j]== target && a!=j) 
+                if (nums[a]+nums[j]== target ) 
                 {
-                    int[] ab = {a,j};
-                    return ab;
+                    ;
+                    return new int[] {a,j};
                 }
             }
         }
