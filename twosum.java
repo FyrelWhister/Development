@@ -4,20 +4,19 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) 
     {
-        
-        for(int a = 0;a<nums.length;a+=1)
+        int n = nums.length;
+        for(int a = 0;a<n;a+=1)
         {
-            for(int j=a+1;j<nums.length;j+=1)
+            for(int j=a+1;j<n;j+=1)
             {
                 if (nums[a]+nums[j]== target ) 
                 {
-                    ;
                     return new int[] {a,j};
                 }
             }
         }
 
             
-        return new int[0];
+        return new int[]{};
     }
 }
